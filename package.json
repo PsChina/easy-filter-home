@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "easy-filter": "^1.4.5",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
+  }
+}
