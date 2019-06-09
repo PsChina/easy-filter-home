@@ -17,4 +17,4 @@ Easy Filter 是第三方的过滤器，它让 Vue.js 处理数字，字符串，
 - JSON转换
 
 
-现在开始<a class="link" href="./guide/">起步</a>或动手尝试我们的示例吧 (查看仓库的 <a class="pointer" target="__blank" :href="repo"><code>README.md</code></a><OutboundLink/> 1来运行它们)。
+现在开始<a class="link" href="./currency/">起步</a>或动手尝试我们的示例吧 (查看仓库的 <a class="pointer" target="__blank" :href="repo"><code>README.md</code></a><OutboundLink/> 1来运行它们)。
