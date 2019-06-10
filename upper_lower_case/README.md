@@ -43,7 +43,7 @@
 ::: tip
 Render dynamic components only once per run! (Please edit it first, then click the Run button.)
 
-Editing the run again will not take effect, please refresh the page and try again.
+Editing the run again will not take effect, please reopen the page and try again.
 :::
 
 <div>
@@ -56,4 +56,3 @@ Editing the run again will not take effect, please refresh the page and try agai
     <runtime-comp/>
 </div>
 
-<a class="link" v-on:click="reload">Reload</a>

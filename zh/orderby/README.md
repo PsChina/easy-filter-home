@@ -177,7 +177,7 @@ orderBy(input, callBack = (v1,v2)=> v1.att > v2.att ? 1 : -1) {
 ::: tip
 每次运行只渲染一次动态组件！（请先编辑好，再点击运行按钮。）
 
-再次编辑将不会生效，请刷新该页面重试。
+再次编辑将不会生效，请重新打开该页面重试。
 :::
 
 <div>
@@ -190,4 +190,3 @@ orderBy(input, callBack = (v1,v2)=> v1.att > v2.att ? 1 : -1) {
     <runtime-comp/>
 </div>
 
-<a class="link" v-on:click="reload">刷新当前页</a>
