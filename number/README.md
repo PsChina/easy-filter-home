@@ -142,7 +142,7 @@ Up to 8 decimal places are displayed by default and will not be rounded off.
 <div>{{ 1 | number(2, {pad:true}) }}</div>
 <br/>
 
-## rounding
+## Rounding
 
 ```html
 <div>{{ 3.1415 | number(3, {round: true}) }}</div>
