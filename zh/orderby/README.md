@@ -86,9 +86,9 @@
     cursor:pointer;
   }
 </style>
-## orderBy
+## OrderBy
 
-orderBy 能帮我们排序数组。(默认升序排列)
+`OrderBy` 能帮我们排序数组。(默认升序排列)
 
 ## 根据属性排序
 
@@ -177,11 +177,11 @@ orderBy(input, callBack = (v1,v2)=> v1.att > v2.att ? 1 : -1) {
 ::: tip
 每次运行只渲染一次动态组件！（请先编辑好，再点击运行按钮。）
 
-再次编辑将不会生效，请刷新该页面重试。
+再次编辑将不会生效，请重新打开该页面重试。
 :::
 
 <div>
-   <textarea style="height:380px" v-model="code"/>
+   <textarea style="height:500px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">运行</a>
@@ -190,4 +190,3 @@ orderBy(input, callBack = (v1,v2)=> v1.att > v2.att ? 1 : -1) {
     <runtime-comp/>
 </div>
 
-<a class="link" v-on:click="reload">刷新当前页</a>

@@ -54,9 +54,9 @@
     }
 </script>
 
-## number
+## Number
 
-`number` 能将数字格式化为字符串。
+`Number` 能将数字格式化为字符串。
 
 当您传入一个整数时，默认值会有一位值为 0 的小数位，
 
@@ -245,7 +245,9 @@ export default {
   }
 }
 <template>
-  <div v-for="num in arr">{{ num | number(3, {pad: true, round: true} )}}</div>
+  <div v-for="num in arr">
+    {{ num | number(3, {pad: true, round: true} )}}
+  </div>
 </template>
 // 1.000
 // 2.200
@@ -274,11 +276,11 @@ export default {
 ::: tip
 每次运行只渲染一次动态组件！（请先编辑好，再点击运行按钮。）
 
-再次编辑将不会生效，请刷新该页面重试。
+再次编辑将不会生效，请重新打开该页面重试。
 :::
 
 <div>
-   <textarea style="height:250px" v-model="code"/>
+   <textarea style="height:260px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">运行</a>
@@ -287,4 +289,4 @@ export default {
     <runtime-comp/>
 </div>
 
-<a class="link" v-on:click="reload">刷新当前页</a>
+

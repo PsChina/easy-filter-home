@@ -54,7 +54,7 @@
     }
 </script>
 
-## number
+## Number
 
 `Number` can format a number as a string.
 
@@ -142,7 +142,7 @@ Up to 8 decimal places are displayed by default and will not be rounded off.
 <div>{{ 1 | number(2, {pad:true}) }}</div>
 <br/>
 
-## rounding
+## Rounding
 
 ```html
 <div>{{ 3.1415 | number(3, {round: true}) }}</div>
@@ -245,7 +245,9 @@ export default {
   }
 }
 <template>
-  <div v-for="num in arr">{{ num | number(3, {pad: true, round: true} )}}</div>
+  <div v-for="num in arr">
+    {{ num | number(3, {pad: true, round: true} )}}
+  </div>
 </template>
 // 1.000
 // 2.200
@@ -274,11 +276,11 @@ The number of decimal places is required to exceed the default 8-bit decimal
 ::: tip
 Render dynamic components only once per run! (Please edit it first, then click the Run button.)
 
-Editing the run again will not take effect, please refresh the page and try again.
+Editing the run again will not take effect, please reopen the page and try again.
 :::
 
 <div>
-   <textarea style="height:250px" v-model="code"/>
+   <textarea style="height:260px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">Run</a>
@@ -287,4 +289,4 @@ Editing the run again will not take effect, please refresh the page and try agai
     <runtime-comp/>
 </div>
 
-<a class="link" v-on:click="reload">Reload</a>
+

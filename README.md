@@ -1,6 +1,6 @@
 <script>
   import vm from '@views/introduce'
-  export default vm
+  export default Object.assign({},vm)
 </script>
 
 # Introduction
@@ -16,4 +16,4 @@ Easy Filter is a third-party filter that makes Vue.js more convenient for workin
 - Letter case conversion
 - JSON conversion
 
-<a class="link" href="./guide/">Get started</a> or play with the examples (see <a class="pointer" target="__blank" :href="repo"><code>README.md</code></a><OutboundLink/> to run them).
+Play with the examples (see <a class="pointer" target="__blank" :href="repo"><code>README.md</code></a><OutboundLink/> to run them).

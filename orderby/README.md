@@ -86,7 +86,7 @@
     cursor:pointer;
   }
 </style>
-## orderBy
+## OrderBy
 
 `OrderBy` can help us sort the array. (default ascending order)
 
@@ -154,7 +154,7 @@
 </script>
 ```
 
-## descending sort
+## Descending sort
 
 The result above is ascending, and the reverse parameter can be set to true if you want to reverse.
 
@@ -177,11 +177,11 @@ orderBy(input, callBack = (v1,v2)=> v1.att > v2.att ? 1 : -1) {
 ::: tip
 Render dynamic components only once per run! (Please edit it first, then click the Run button.)
 
-Editing the run again will not take effect, please refresh the page and try again.
+Editing the run again will not take effect, please reopen the page and try again.
 :::
 
 <div>
-   <textarea style="height:380px" v-model="code"/>
+   <textarea style="height:500px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">Run</a>
@@ -190,4 +190,3 @@ Editing the run again will not take effect, please refresh the page and try agai
     <runtime-comp/>
 </div>
 
-<a class="link" v-on:click="reload">Reload</a>

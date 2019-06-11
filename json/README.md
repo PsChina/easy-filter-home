@@ -27,7 +27,7 @@
         }  
     }
 </script>
-## json
+## Json
 
 `Json` will convert a js object into a JSON-formatted string object using JSON.stringify.
 
@@ -44,11 +44,11 @@
 ::: tip
 Render dynamic components only once per run! (Please edit it first, then click the Run button.)
 
-Editing the run again will not take effect, please refresh the page and try again.
+Editing the run again will not take effect, please reopen the page and try again.
 :::
 
 <div>
-   <textarea style="height:100px" v-model="code"/>
+   <textarea style="height:90px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">Run</a>
@@ -57,4 +57,4 @@ Editing the run again will not take effect, please refresh the page and try agai
     <runtime-comp/>
 </div>
 
-<a class="link" v-on:click="reload">Reload</a>
+

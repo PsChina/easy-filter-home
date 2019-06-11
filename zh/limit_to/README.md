@@ -28,7 +28,7 @@
     }
 </script>
 
-## limitTo
+## LimitTo
 
 `LimitTo` 会创建一个新数组或者字符串,
 
@@ -132,11 +132,11 @@ limitTo([1, 2, 3, 4, 5], 2, { startWith: 3, cutOut: true });
 ::: tip
 每次运行只渲染一次动态组件！（请先编辑好，再点击运行按钮。）
 
-再次编辑将不会生效，请刷新该页面重试。
+再次编辑将不会生效，请重新打开该页面重试。
 :::
 
 <div>
-   <textarea style="height:100px" v-model="code"/>
+   <textarea style="height:90px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">运行</a>
@@ -145,4 +145,3 @@ limitTo([1, 2, 3, 4, 5], 2, { startWith: 3, cutOut: true });
     <runtime-comp/>
 </div>
 
-<a class="link" v-on:click="reload">刷新当前页</a>

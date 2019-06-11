@@ -27,9 +27,9 @@
         }  
     }
 </script>
-## json
+## Json
 
-`json` 将会把一个 js 对象转换为一个 JSON 格式的字符串对象，它使用了 JSON.stringify。
+`Json` 将会把一个 js 对象转换为一个 JSON 格式的字符串对象，它使用了 JSON.stringify。
 
 ```html
 <div>{{ {name:'foo',getName:()=>'foo'} | json }}</div>
@@ -43,11 +43,11 @@
 ::: tip
 每次运行只渲染一次动态组件！（请先编辑好，再点击运行按钮。）
 
-再次编辑将不会生效，请刷新该页面重试。
+再次编辑将不会生效，请重新打开该页面重试。
 :::
 
 <div>
-   <textarea style="height:100px" v-model="code"/>
+   <textarea style="height:90px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">运行</a>
@@ -56,4 +56,4 @@
     <runtime-comp/>
 </div>
 
-<a class="link" v-on:click="reload">刷新当前页</a>
+

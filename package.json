@@ -1,7 +1,8 @@
 {
   "dependencies": {
-    "easy-filter": "^1.4.5",
-    "vue": "^2.6.10"
+    "easy-filter": "^1.4.7",
+    "vue": "^2.6.10",
+    "vuepress": "^1.0.1"
   },
   "devDependencies": {
     "css-loader": "^2.1.1",

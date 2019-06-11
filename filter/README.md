@@ -80,7 +80,7 @@
     }
 </script>
 
-## filter
+## Filter
 
 The `Filter` filter filters the elements of the array that match the criteria.
 
@@ -171,13 +171,17 @@ Example:
 Filter all data in the previous example that is older than or equal to six years old.
 
 ```html
-<div v-for="item in filter(personArray, matchFn)" :key="item.id">{{item}}</div>
+<div v-for="item in filter(personArray, matchFn)" :key="item.id">
+  {{item}}
+</div>
 ```
 
 <div v-for="item in filter(personArray, matchFn)" :key="item.id">{{item}}</div>
 
 ```js
-  // <div v-for="item in filter(personArray, matchFn)" :key="item.id">{{item}}</div>
+  // <div v-for="item in filter(personArray, matchFn)" :key="item.id">
+  //   {{item}}
+  // </div>
   data () {
       return {
         personArray: [
@@ -206,11 +210,11 @@ Filter all data in the previous example that is older than or equal to six years
 ::: tip
 Render dynamic components only once per run! (Please edit it first, then click the Run button.)
 
-Editing the run again will not take effect, please refresh the page and try again.
+Editing the run again will not take effect, please reopen the page and try again.
 :::
 
 <div>
-   <textarea style="height:380px" v-model="code"/>
+   <textarea style="height:500px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">Run</a>
@@ -219,4 +223,3 @@ Editing the run again will not take effect, please refresh the page and try agai
     <runtime-comp/>
 </div>
 
-<a class="link" v-on:click="reload">Reload</a>

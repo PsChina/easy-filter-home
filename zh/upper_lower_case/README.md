@@ -9,7 +9,7 @@
         data(){
             return {
                 code: `{
-        template: "<div>{{ 'Hello' | lowerCase }}</div>",
+        template: "<div>{{ 'Hello' | lowercase }}</div>",
     }`
             }
         },
@@ -23,19 +23,24 @@
         }
     }
 </script>  
+
 ## 小字字母
 
 ```html
-<div>{{ 'Hello' | lowerCase }}</div>
+<div>{{ 'Hello' | lowercase }}</div>
 <!-- hello -->
 ```
+<div>{{ 'Hello' | lowercase }}</div>
+<br/>
 
 ## 大写字母
 
 ```html
-<div>{{ 'Hello' | upperCase }}</div>
+<div>{{ 'Hello' | uppercase }}</div>
 <!-- HELLO -->
 ```
+<div>{{ 'Hello' | uppercase }}</div>
+<br/>
 
 ## 动手尝试
 
@@ -43,7 +48,7 @@
 ::: tip
 每次运行只渲染一次动态组件！（请先编辑好，再点击运行按钮。）
 
-再次编辑将不会生效，请刷新该页面重试。
+再次编辑将不会生效，请重新打开该页面重试。
 :::
 
 <div>
@@ -56,4 +61,3 @@
     <runtime-comp/>
 </div>
 
-<a class="link" v-on:click="reload">刷新当前页</a>

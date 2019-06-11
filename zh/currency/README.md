@@ -24,9 +24,9 @@
     }
 </script>
 
-## currency
+## Currency
 
-`currency` 可以给展示金额数字加上货币符号以及分隔符。
+`Currency` 可以给展示金额数字加上货币符号以及分隔符。
 
 ## 无参
 
@@ -121,7 +121,9 @@
 ## 多个属性同时使用
 
 ```html
-<div>{{ 1000 | currency('¥', 0, {symbolOnLeft: false, addSpace: true}) }}</div>
+<div>
+    {{ 1000 | currency('¥', 0, {symbolOnLeft: false, addSpace: true}) }}
+</div>
 <!-- 1000 => 1,000 ¥ -->
 ```
 <div>{{ 1000 | currency('¥', 0, {symbolOnLeft: false, addSpace: true}) }}</div>
@@ -133,7 +135,7 @@
 ::: tip
 每次运行只渲染一次动态组件！（请先编辑好，再点击运行按钮。）
 
-再次编辑将不会生效，请刷新该页面重试。
+再次编辑将不会生效，请重新打开该页面重试。
 :::
 
 <div>
@@ -145,5 +147,3 @@
 <div>
     <runtime-comp/>
 </div>
-
-<a class="link" v-on:click="reload">刷新当前页</a>
