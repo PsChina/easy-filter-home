@@ -9,7 +9,7 @@
         data(){
             return {
                 code: `{
-        template: "<div>{{ 'Hello' | lowerCase }}</div>",
+        template: "<div>{{ 'Hello' | lowercase }}</div>",
     }`
             }
         },
@@ -26,16 +26,20 @@
 ## Lowercase letters
 
 ```html
-<div>{{ 'Hello' | lowerCase }}</div>
+<div>{{ 'Hello' | lowercase }}</div>
 <!-- hello -->
 ```
+<div>{{ 'Hello' | lowercase }}</div>
+<br/>
 
 ## Uppercase letters
 
 ```html
-<div>{{ 'Hello' | upperCase }}</div>
+<div>{{ 'Hello' | uppercase }}</div>
 <!-- HELLO -->
 ```
+<div>{{ 'Hello' | uppercase }}</div>
+<br/>
 
 ## Try it out
 

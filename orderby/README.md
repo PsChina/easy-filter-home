@@ -86,7 +86,7 @@
     cursor:pointer;
   }
 </style>
-## orderBy
+## OrderBy
 
 `OrderBy` can help us sort the array. (default ascending order)
 
@@ -181,7 +181,7 @@ Editing the run again will not take effect, please reopen the page and try again
 :::
 
 <div>
-   <textarea style="height:380px" v-model="code"/>
+   <textarea style="height:500px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">Run</a>

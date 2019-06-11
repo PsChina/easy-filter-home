@@ -54,7 +54,7 @@
     }
 </script>
 
-## number
+## Number
 
 `Number` can format a number as a string.
 
@@ -245,7 +245,9 @@ export default {
   }
 }
 <template>
-  <div v-for="num in arr">{{ num | number(3, {pad: true, round: true} )}}</div>
+  <div v-for="num in arr">
+    {{ num | number(3, {pad: true, round: true} )}}
+  </div>
 </template>
 // 1.000
 // 2.200
@@ -278,7 +280,7 @@ Editing the run again will not take effect, please reopen the page and try again
 :::
 
 <div>
-   <textarea style="height:250px" v-model="code"/>
+   <textarea style="height:260px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">Run</a>

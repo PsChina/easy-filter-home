@@ -24,7 +24,7 @@
     }
 </script>
 
-## currency
+## Currency
 
 `Currency` can add a currency symbol and a separator to a number.
 
@@ -97,7 +97,7 @@ Add a space between the symbol and the number.
 <div>{{ 1000 | currency('¥', 0, {addSpace: true}) }}</div>
 <br/>
 
-## rounding
+## Rounding
 
 ```html
 <div>{{ 1000.999 | currency('¥', 2, {round: true}) }}</div>

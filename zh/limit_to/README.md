@@ -28,7 +28,7 @@
     }
 </script>
 
-## limitTo
+## LimitTo
 
 `LimitTo` 会创建一个新数组或者字符串,
 
@@ -136,7 +136,7 @@ limitTo([1, 2, 3, 4, 5], 2, { startWith: 3, cutOut: true });
 :::
 
 <div>
-   <textarea style="height:100px" v-model="code"/>
+   <textarea style="height:90px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">运行</a>

@@ -27,9 +27,9 @@
         }  
     }
 </script>
-## json
+## Json
 
-`json` 将会把一个 js 对象转换为一个 JSON 格式的字符串对象，它使用了 JSON.stringify。
+`Json` 将会把一个 js 对象转换为一个 JSON 格式的字符串对象，它使用了 JSON.stringify。
 
 ```html
 <div>{{ {name:'foo',getName:()=>'foo'} | json }}</div>
@@ -47,7 +47,7 @@
 :::
 
 <div>
-   <textarea style="height:100px" v-model="code"/>
+   <textarea style="height:90px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">运行</a>

@@ -23,7 +23,7 @@
         }
     }
 </script>
-## date
+## Date
 
 `Date` can help us convert the timestamp to a string.
 

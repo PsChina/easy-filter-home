@@ -24,9 +24,9 @@
     }
 </script>
 
-## currency
+## Currency
 
-`currency` 可以给展示金额数字加上货币符号以及分隔符。
+`Currency` 可以给展示金额数字加上货币符号以及分隔符。
 
 ## 无参
 

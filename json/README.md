@@ -27,7 +27,7 @@
         }  
     }
 </script>
-## json
+## Json
 
 `Json` will convert a js object into a JSON-formatted string object using JSON.stringify.
 
@@ -48,7 +48,7 @@ Editing the run again will not take effect, please reopen the page and try again
 :::
 
 <div>
-   <textarea style="height:100px" v-model="code"/>
+   <textarea style="height:90px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">Run</a>

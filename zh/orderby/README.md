@@ -86,9 +86,9 @@
     cursor:pointer;
   }
 </style>
-## orderBy
+## OrderBy
 
-orderBy 能帮我们排序数组。(默认升序排列)
+OrderBy 能帮我们排序数组。(默认升序排列)
 
 ## 根据属性排序
 
@@ -181,7 +181,7 @@ orderBy(input, callBack = (v1,v2)=> v1.att > v2.att ? 1 : -1) {
 :::
 
 <div>
-   <textarea style="height:380px" v-model="code"/>
+   <textarea style="height:500px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">运行</a>

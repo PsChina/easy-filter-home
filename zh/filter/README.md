@@ -80,9 +80,9 @@
     }
 </script>
 
-## filter
+## Filter
 
-`filter` 过滤器能筛选数组符合条件的元素。
+`Filter` 过滤器能筛选数组符合条件的元素。
 
 ## 模糊搜索
 
@@ -169,13 +169,17 @@ filter 过滤器还支持范围过滤。
 例如: 筛选初上一个例子中所有年龄大于或等于六岁的数据。
 
 ```html
-<div v-for="item in filter(personArray, matchFn)" :key="item.id">{{item}}</div>
+<div v-for="item in filter(personArray, matchFn)" :key="item.id">
+  {{item}}
+</div>
 ```
 
 <div v-for="item in filter(personArray, matchFn)" :key="item.id">{{item}}</div>
 
 ```js
-  // <div v-for="item in filter(personArray, matchFn)" :key="item.id">{{item}}</div>
+  // <div v-for="item in filter(personArray, matchFn)" :key="item.id">
+  //   {{item}}
+  // </div>
   data () {
       return {
         personArray: [
@@ -208,7 +212,7 @@ filter 过滤器还支持范围过滤。
 :::
 
 <div>
-   <textarea style="height:380px" v-model="code"/>
+   <textarea style="height:500px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">运行</a>

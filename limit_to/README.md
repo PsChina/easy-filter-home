@@ -28,7 +28,7 @@
     }
 </script>
 
-## limitTo
+## LimitTo
 
 `LimitTo` will create a new array or string,
 
@@ -137,7 +137,7 @@ Editing the run again will not take effect, please reopen the page and try again
 :::
 
 <div>
-   <textarea style="height:100px" v-model="code"/>
+   <textarea style="height:90px" v-model="code"/>
 </div>
 
 <a class="link" v-on:click="run">Run</a>
