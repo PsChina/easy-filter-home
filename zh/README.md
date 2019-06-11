@@ -1,6 +1,6 @@
 <script>
   import vm from '@views/introduce'
-  export default vm
+  export default Object.assign({},vm)
 </script>
 
 # 介绍
