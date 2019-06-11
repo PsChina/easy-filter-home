@@ -154,7 +154,7 @@
 </script>
 ```
 
-## descending sort
+## Descending sort
 
 The result above is ascending, and the reverse parameter can be set to true if you want to reverse.
 
