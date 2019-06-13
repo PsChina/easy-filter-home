@@ -46,7 +46,7 @@ export default {
 }
 ```
 
-The first parameter "input" is the data to be filtered, which can be an array, a number, or a string.
+The first parameter `input` is the data to be filtered, which can be an array, a number, or a string.
 
 The second parameter is the length you want to limit.
 
@@ -63,7 +63,7 @@ The fields of the configuration item are:
 | startWithIndex | Calculates the number of elements to limit based on the index | number | 0 |
 | startWith | Calculate the number of elements to limit based on the element | not number | undefined |
 | ignore | Ignore matched elements when counting | RegExp , object | undefined |
-| cutOut | Whether to intercept | boolean | fasle |
+| cutOut | Whether to intercept | boolean | false |
 
 
 ## Display a string of the specified length
