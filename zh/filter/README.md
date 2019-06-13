@@ -166,7 +166,7 @@
 
 filter 过滤器还支持范围过滤。
 
-例如: 筛选初上一个例子中所有年龄大于或等于六岁的数据。
+例如: 筛选出上一个例子中所有年龄大于或等于六岁的数据。
 
 ```html
 <div v-for="item in filter(personArray, matchFn)" :key="item.id">

@@ -50,7 +50,7 @@ The first parameter "input" is the data to be filtered, which can be an array, a
 
 The second parameter is the length you want to limit.
 
-| Second Parameter | Function | Parameter Type | Default Parameter |
+| Second Parameter | Description | Type | Default |
 | :--------: | :------: | :------: | :----------------------: |
 | Limit | limit length | number | Number.POSITIVE_INFINITY |
 
@@ -58,7 +58,7 @@ The third parameter is the configuration item, which tells the filter how to fil
 
 The fields of the configuration item are:
 
-| Properties | Role | Parameter Type | Default Parameters |
+| Attribute | Description | Type | Default |
 | :------------: | :---------------------------------: | :-------------: | :-------: |
 | startWithIndex | Calculates the number of elements to limit based on the index | number | 0 |
 | startWith | Calculate the number of elements to limit based on the element | not number | undefined |
