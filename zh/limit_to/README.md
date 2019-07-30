@@ -63,7 +63,7 @@ export default {
 | startWithIndex | 根据索引开始计算要限制的元素个数 |     number      |     0     |
 |   startWith    | 根据元素开始计算要限制的元素个数 |   not number    | undefined |
 |     ignore     |      计数时忽略被匹配的元素      | RegExp , object | undefined |
-|     cutOut     |             是否截取             |     boolean     |   fasle   |
+|     cut     |             是否截取             |     boolean     |   fasle   |
 
 
 ## 显示指定长度的字符串
@@ -96,10 +96,10 @@ export default {
 ## 裁剪
 
 ```html
-<div>{{ 'hello' | limitTo(3, {startWithIndex:1, cutOut: true}) }}</div>
+<div>{{ 'hello' | limitTo(3, {startWithIndex:1, cut: true}) }}</div>
 <!-- ell -->
 ```
-<div>{{ 'hello' | limitTo(3, {startWithIndex:1, cutOut: true}) }}</div>
+<div>{{ 'hello' | limitTo(3, {startWithIndex:1, cut: true}) }}</div>
 <br/>
 
 ## 忽略不进入计数的元素
@@ -121,10 +121,10 @@ limitTo([1, 2, 3, 4, 5], 2);
 <br/>
 
 ```js
-limitTo([1, 2, 3, 4, 5], 2, { startWith: 3, cutOut: true });
+limitTo([1, 2, 3, 4, 5], 2, { startWith: 3, cut: true });
 // [3,4]
 ```
-<div>{{ [1,2,3,4,5] | limitTo(2,{ startWith: 3, cutOut: true }) }}</div>
+<div>{{ [1,2,3,4,5] | limitTo(2,{ startWith: 3, cut: true }) }}</div>
 <br/>
 
 ## 动手尝试

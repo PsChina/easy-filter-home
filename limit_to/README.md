@@ -63,7 +63,7 @@ The fields of the configuration item are:
 | startWithIndex | Calculates the number of elements to limit based on the index | number | 0 |
 | startWith | Calculate the number of elements to limit based on the element | not number | undefined |
 | ignore | Ignore matched elements when counting | RegExp , object | undefined |
-| cutOut | Whether to intercept | boolean | false |
+| cut | Whether to intercept | boolean | false |
 
 
 ## Display a string of the specified length
@@ -96,10 +96,10 @@ The fields of the configuration item are:
 ## Crop
 
 ```html
-<div>{{ 'hello' | limitTo(3, {startWithIndex:1, cutOut: true}) }}</div>
+<div>{{ 'hello' | limitTo(3, {startWithIndex:1, cut: true}) }}</div>
 <!-- ell -->
 ```
-<div>{{ 'hello' | limitTo(3, {startWithIndex:1, cutOut: true}) }}</div>
+<div>{{ 'hello' | limitTo(3, {startWithIndex:1, cut: true}) }}</div>
 <br/>
 
 ## Ignore elements that do not enter the count
@@ -121,10 +121,10 @@ limitTo([1, 2, 3, 4, 5], 2);
 <br/>
 
 ```js
-limitTo([1, 2, 3, 4, 5], 2, { startWith: 3, cutOut: true });
+limitTo([1, 2, 3, 4, 5], 2, { startWith: 3, cut: true });
 // [3,4]
 ```
-<div>{{ [1,2,3,4,5] | limitTo(2,{ startWith: 3, cutOut: true }) }}</div>
+<div>{{ [1,2,3,4,5] | limitTo(2,{ startWith: 3, cut: true }) }}</div>
 <br/>
 
 ## Try it out
