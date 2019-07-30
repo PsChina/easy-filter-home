@@ -1,81 +1,12 @@
 <script>
     import Vue from 'vue'
     import EasyFilter from 'easy-filter'
-    import VueI18n from 'vue-i18n'
     import '@style/style.scss'
     Vue.use(EasyFilter)
     const bus = new Vue()
     Vue.component('runtime-comp',(resolve)=>bus.$on('run',resolve))
-    Vue.use(VueI18n)
-    const messages = {
-    zh: {
-        "localWeek":{
-            "week": [
-            "星期日",
-            "星期一",
-            "星期二",
-            "星期三",
-            "星期四",
-            "星期五",
-            "星期六",
-            ],
-            "shortWeek": [
-            "周日",
-            "周一",
-            "周二",
-            "周三",
-            "周四",
-            "周五",
-            "周六",
-            ]
-        }
-    },
-    en: {
-        "localWeek":{
-            "week": [
-                "Sunday",
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-            ],
-            "shortWeek": ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"]
-        }
-    },
-    ja: {
-        "localWeek":{
-            "week": [
-                "にちようび",
-                "げつようび",
-                "かようび",
-                "すいようび",
-                "もくようび",
-                "きんようび",
-                "どようび",
-            ],
-            "shortWeek": [
-                "にちようび",
-                "げつようび",
-                "かようび",
-                "すいようび",
-                "もくようび",
-                "きんようび",
-                "どようび",
-            ]
-        }
-    }
-    }
-
-    // Create VueI18n instance with options
-    const i18n = new VueI18n({
-        locale: 'zh', // set locale
-        messages, // set locale messages
-        })
 
     export default {
-        i18n,
         data(){
             return {
                 code:`{
@@ -89,9 +20,6 @@
             },
             reload(){
                 window.location.reload()
-            },
-            changeLang(event){
-                this.$i18n.locale = event.target.value;
             }
         }
     }
@@ -293,20 +221,8 @@ Arbitrary separator
 ```html
 <div>{{ 1523169365575 | date('EEE', $t('localWeek')) }}</div>
 ```
+星期日
 
-<div>{{ 1523169365575 | date('EEE', $t('localWeek')) }}</div>
-
-<select v-on:change="changeLang">
-    <option value="zh">
-        简体中文
-    </option>
-    <option value="en">
-        English
-    </option>
-    <option value="ja">
-        日本語
-    </option>
-</select>
 
 ```js
 import Vue from 'vue'
