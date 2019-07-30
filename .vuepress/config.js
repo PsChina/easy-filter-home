@@ -43,8 +43,7 @@ module.exports = {
                               ['/orderby/','Sort array'],
                               ['/number/','Formatted number'],
                               ['/upper_lower_case/','Letter case conversion'],
-                              ['/limit_to/','Limit string length'],
-                              ['/json/','JSON conversion']
+                              ['/limit_to/','Limit string length']
                           ]
                     }
                 ]
@@ -76,8 +75,7 @@ module.exports = {
                               ['/zh/orderby/','排序数组'],
                               ['/zh/number/','格式化数字'],
                               ['/zh/upper_lower_case/','字母大小写转换'],
-                              ['/zh/limit_to/','限制字符串长度'],
-                              ['/zh/json/','JSON转换']
+                              ['/zh/limit_to/','限制字符串长度']
                           ]
                     }
                 ]

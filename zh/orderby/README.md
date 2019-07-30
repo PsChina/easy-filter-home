@@ -46,7 +46,7 @@
       this.reverse = !this.reverse
     },
     orderBy(input, rule, reverse) {
-      return this.easyFilter.orderBy(input, rule, reverse);
+      return this.$easyFilter.orderBy(input, rule, reverse);
     }
   }
 }
@@ -72,7 +72,7 @@
             this.rule = rule;
           },
           orderBy(input, rule, reverse) {
-            return this.easyFilter.orderBy(input, rule, reverse);
+            return this.$easyFilter.orderBy(input, rule, reverse);
           }
         }
     }
@@ -143,11 +143,11 @@
         this.rule = rule;
       },
       orderBy(input, rule, reverse) {
-        return this.easyFilter.orderBy(input, rule, reverse);
+        return this.$easyFilter.orderBy(input, rule, reverse);
       }
       // 或者自定义排序函数 (数组 sort 回调)
       // orderBy(input, callBack = (v1,v2)=> v1.att > v2.att ? 1 : -1) {
-      //   return this.easyFilter.orderBy(input, callBack)
+      //   return this.$easyFilter.orderBy(input, callBack)
       // }
     }
   };
@@ -168,7 +168,7 @@ orderBy 接受自定义排序函数
 
 ```js
 orderBy(input, callBack = (v1,v2)=> v1.att > v2.att ? 1 : -1) {
-  return this.easyFilter.orderBy(input, callBack)
+  return this.$easyFilter.orderBy(input, callBack)
 }
 ```
 

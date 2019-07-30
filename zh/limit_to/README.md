@@ -40,7 +40,7 @@
 export default {
   methods: {
     limitTo(input, limit, options) {
-      return this.easyFilter.limitTo(input, limit, options);
+      return this.$easyFilter.limitTo(input, limit, options);
     }
   }
 }

@@ -23,7 +23,7 @@
           v-for="value in filter(personArray, matchFn)"
           :key="value.id"
           >
-          <!-- v-for="value in filter(personArray, new RegExp(match,'i'))" -->
+          <!-- v-for="value in filter(personArray, match)" -->
           <td v-text="value.id"></td>
           <td v-text="value.name"></td>
           <td v-text="value.age"></td>
@@ -45,7 +45,7 @@
       },
       methods:{
         filter (input, match) {
-          return this.easyFilter.filter(input, match);
+          return this.$easyFilter.filter(input, match);
         },
         matchFn (value) {
             return value.age >= 6;
@@ -60,7 +60,12 @@
                 { name: "Angela", sex: "female", age: 6, id: 3 },
                 { name: "Shitou", sex: "male", age: 7, id: 4 },
                 { name: "Tiantian", sex: "male", age: 5, id: 5 }
-              ]
+              ],
+              ignore: new Set(),
+              options: {
+                match: '',
+                ignore:[]
+              },
             }
         },
         methods:{
@@ -70,11 +75,25 @@
           reload(){
               window.location.reload()
           },
-          filter (input, match) {
-            return this.easyFilter.filter(input, match);
+          filter (input, options) {
+            return this.$easyFilter.filter(input, options);
           },
           matchFn (value) {
               return value.age >= 6;
+          },
+          select(event) {
+            if (event.target.checked) {
+              this.ignore.add(event.target.value);
+            } else {
+              this.ignore.delete(event.target.value);
+            }
+            this.options.ignore = Array.from(this.ignore)
+            console.log(this.options);
+          }
+        },
+        watch:{
+          match(match, oldVal){
+            this.options.match = match;
           }
         }
     }
@@ -88,6 +107,14 @@ The `Filter` filter filters the elements of the array that match the criteria.
 
 <div>
 <input type="text" style="outline:none" v-model="match" />
+<div>
+  <div>ignore property:</div>
+  <div v-for="key in ['name','sex','age','id']">
+    <label :for="key">
+      <span v-text="key"></span><input type="checkbox" :value="key" v-on:change="select">
+    </label>
+  </div>
+</div>
 <table>
     <tr>
     <th>ID</th>
@@ -96,7 +123,7 @@ The `Filter` filter filters the elements of the array that match the criteria.
     <th>Sex</th>
     </tr>
     <tr
-    v-for="value in filter(personArray, new RegExp(match,'i'))"
+    v-for="value in filter(personArray, options)"
     :key="value.id"
     >
     <td v-text="value.id"></td>
@@ -149,11 +176,11 @@ The `Filter` filter filters the elements of the array that match the criteria.
     methods: {
       filter(input, match) {
         // Used in js
-        return this.easyFilter.filter(input, match);
+        return this.$easyFilter.filter(input, match);
         // Use other filters
-        // this.easyFilter.lowerCase('WORLD')
-        // this.easyFilter.currency(1000,'¥')
-        // this.easyFilter.date(1523169365575,'yy-MM-dd')
+        // this.$easyFilter.lowerCase('WORLD')
+        // this.$easyFilter.currency(1000,'¥')
+        // this.$easyFilter.date(1523169365575,'yy-MM-dd')
         // ...
       }
     }
@@ -199,10 +226,23 @@ Filter all data in the previous example that is older than or equal to six years
         return value.age >= 6;
     },
     filter (input, matchFn) {
-      return this.easyFilter.filter(input, matchFn);
+      return this.$easyFilter.filter(input, matchFn);
     }
   }
   //...
+```
+
+## ignore property
+
+```js
+    methods: {
+      filter(input, match) {
+        const option = {
+          match,
+          ignore: ['id']
+        }
+        return this.$easyFilter.filter(input, option);
+      }
 ```
 
 ## Try it out

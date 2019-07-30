@@ -14,7 +14,6 @@ Easy Filter 是第三方的过滤器，它让 Vue.js 处理数字，字符串，
 - 格式化数字
 - 字母大小写转换
 - 限制字符串长度
-- JSON转换
 
 
 动手尝试我们的示例吧 (查看仓库的 <a class="pointer" target="__blank" :href="repo"><code>README.md</code></a><OutboundLink/> 来运行它们)。

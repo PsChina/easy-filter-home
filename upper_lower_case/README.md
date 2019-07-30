@@ -10,7 +10,9 @@
             return {
                 code: `{
         template: "<div>{{ 'Hello' | lowercase }}</div>",
-    }`
+    }`,
+    start:0,
+    end:0,
             }
         },
         methods:{
@@ -40,6 +42,21 @@
 ```
 <div>{{ 'Hello' | uppercase }}</div>
 <br/>
+
+## Upper/Lower case width range
+
+```html
+<div>{{ 'hello' | uppercase(0,3) }}</div>
+<div>{{ 'HELLO' | lowercase(1) }}</div>
+```
+<div>{{ 'hello' | uppercase(0,3) }}</div>
+<div>{{ 'HELLO' | lowercase(1) }}</div>
+
+<label> start: <input v-model.number="start"/> </label>
+<label> end: <input v-model.number="end"/> </label>
+
+<div>uppercase: hello => {{ 'hello' | uppercase(start, end) }}</div>
+<div>lowercase: HELLO => {{ 'HELLO' | lowercase(start, end) }}</div>
 
 ## Try it out
 
