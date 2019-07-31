@@ -43,14 +43,14 @@
 <div>{{ 'Hello' | uppercase }}</div>
 <br/>
 
-## Upper/Lower case width range
+## Upper/Lower case with range
 
 ```html
 <div>{{ 'hello' | uppercase(0,3) }}</div>
-<div>{{ 'HELLO' | lowercase(1) }}</div>
+<div>{{ 'HELLO' | lowercase(2) }}</div>
 ```
 <div>{{ 'hello' | uppercase(0,3) }}</div>
-<div>{{ 'HELLO' | lowercase(1) }}</div>
+<div>{{ 'HELLO' | lowercase(2) }}</div>
 
 <label> start: <input v-model.number="start"/> </label>
 <label> end: <input v-model.number="end"/> </label>
