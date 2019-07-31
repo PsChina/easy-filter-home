@@ -7,7 +7,7 @@
 
 ### 直接下载
 
-<a href="https://github.com/PsChina/easy-filter/archive/1.5.4.zip">https://github.com/PsChina/easy-filter/archive/1.5.4.zip</a>
+<a href="https://github.com/PsChina/easy-filter/archive/1.5.5.zip">https://github.com/PsChina/easy-filter/archive/1.5.5.zip</a>
 
 上面的链接会一直指向在 Github 发布的最新版本。
 
@@ -39,16 +39,18 @@ Vue.use(EasyFilter)
 ### 按需引入
 
 ```js
-import Vue from 'vue'
-import { 
-    number,
-    orderBy,
-    // ...
-  } from 'easy-filter'
-
-Vue.use(number)
-Vue.use(orderBy)
-// ...
+import {
+ number,
+ orderBy,
+ //...
+} from "easy-filter";
+Vue.filter('number', number);
+Vue.filter('orderBy', orderBy);
+const easyFilter = {
+  number,
+  orderBy,
+};
+Vue.prototype.$easyFilter = Vue.easyFilter = easyFilter;
 ```
 
 ### Yarn

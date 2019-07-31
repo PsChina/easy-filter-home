@@ -7,7 +7,7 @@
 
 ### Direct Download
 
-<a href="https://github.com/PsChina/easy-filter/archive/1.5.4.zip">https://github.com/PsChina/easy-filter/archive/1.5.4.zip</a>
+<a href="https://github.com/PsChina/easy-filter/archive/1.5.5.zip">https://github.com/PsChina/easy-filter/archive/1.5.5.zip</a>
 
 The above link will always point to the latest release on github.
 
@@ -38,16 +38,18 @@ You don't need to do this when using global script tags.
 ### Install on demand
 
 ```js
-import Vue from 'vue'
-import { 
-    number,
-    orderBy,
-    // ...
-  } from 'easy-filter'
-
-Vue.use(number)
-Vue.use(orderBy)
-// ...
+import {
+ number,
+ orderBy,
+ //...
+} from "easy-filter";
+Vue.filter('number', number);
+Vue.filter('orderBy', orderBy);
+const easyFilter = {
+  number,
+  orderBy,
+};
+Vue.prototype.$easyFilter = Vue.easyFilter = easyFilter;
 ```
 
 ### Yarn
