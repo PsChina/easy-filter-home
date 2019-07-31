@@ -7,7 +7,7 @@
 
 ### Direct Download
 
-<a href="https://github.com/PsChina/easy-filter/archive/1.5.5.zip">https://github.com/PsChina/easy-filter/archive/1.5.5.zip</a>
+<a href="https://github.com/PsChina/easy-filter/archive/1.5.6.zip">https://github.com/PsChina/easy-filter/archive/1.5.6.zip</a>
 
 The above link will always point to the latest release on github.
 

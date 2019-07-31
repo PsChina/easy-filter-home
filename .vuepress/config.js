@@ -22,6 +22,7 @@ module.exports = {
                 lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
                 description: 'A simple Vue filter plug-in',
                 nav: [
+                    { text: 'Typescript', link: '/typescript/'},
                     { text: 'API Reference', link: '/currency/'}
                 ],
                 sidebar: [
@@ -31,6 +32,7 @@ module.exports = {
                         children: [
                           ['/install','Installation'],
                           ['/','Introduction'],
+                          ['/typescript/', 'Typescript']
                         ]
                     },
                     {
@@ -54,7 +56,8 @@ module.exports = {
                 lang: 'zh-CN',
                 description: '一个简单的Vue过滤器插件',
                 nav: [
-                    { text: 'API参考', link: '/zh/currency/'},
+                    { text: 'Typescript', link: '/zh/typescript/'},
+                    { text: 'API参考', link: '/zh/currency/'}
                 ],
                 sidebar: [
                     {
@@ -63,6 +66,7 @@ module.exports = {
                         children: [
                           ['/zh/install','安装'],
                           ['/zh/','介绍'],
+                          ['/zh/typescript/', 'Typescript']
                         ]
                     },
                     {
