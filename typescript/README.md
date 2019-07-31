@@ -1,6 +1,6 @@
 ## Typescript support
 
-Easy Filter 1.5.6 starts typescript support.
+Easy Filter 1.5.7 starts typescript support.
 
 ## Installation
 
@@ -104,7 +104,7 @@ export interface LimitToOption {
   startWithIndex: number;
   startWith?: any;
   ignore?: string | RegExp;
-  cutOut?: boolean;
+  cut?: boolean;
 }
 
 export type FilterOptions = MatchRules | Match | RegExp;
