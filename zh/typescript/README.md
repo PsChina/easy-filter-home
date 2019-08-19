@@ -16,11 +16,14 @@ Vue.use(EasyFilter)
 import Vue from 'vue';
 import {
   number,
+  currency,
+} from 'easy-filter';
+
+import {
   NumberDate,
   NumberOptions,
-  currency,
   CurrencyOption,
-} from 'easy-filter';
+} from 'easy-filter/types';
 
 interface EasyFilter {
   number(input: NumberDate, digits?: number | undefined, options?: NumberOptions | undefined): string;
