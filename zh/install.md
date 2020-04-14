@@ -7,7 +7,7 @@
 
 ### 直接下载
 
-<a href="https://github.com/PsChina/easy-filter/archive/1.6.0.zip">https://github.com/PsChina/easy-filter/archive/1.6.0.zip</a>
+<a href="https://github.com/PsChina/easy-filter/archive/1.6.1.zip">https://github.com/PsChina/easy-filter/archive/1.6.1.zip</a>
 
 上面的链接会一直指向在 Github 发布的最新版本。
 
