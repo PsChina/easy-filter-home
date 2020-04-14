@@ -58,8 +58,6 @@
 
 `Number` can format a number as a string.
 
-When you pass in an integer, the default value will have a decimal place with a value of 0.
-
 When you enter a decimal, you get a string type number.
 
 You can also change the number of decimal places by passing parameters.
@@ -74,32 +72,14 @@ And configure the third parameter to determine if you want to round off and if y
 
 ## Without parameters
 
+Do nothing without any params.
+
 ```html
 <div>{{ 3.14 | number }}</div>
 <!-- 3.14 -->
 ```
 
 <div>{{ 3.14 | number }}</div>
-<br/>
-
-The negative sign will be retained by default.
-
-```html
-<div>{{ -0 | number }}</div>
-<!-- -0.0 -->
-```
-
-<div>{{ -0 | number }}</div>
-<br/>
-
-Integer defaults to zero in tenths.
-
-```html
-<div>{{ 3 | number }}</div>
-<!-- 3.0 -->
-```
-
-<div>{{ 3 | number }}</div>
 <br/>
 
 Up to 8 decimal places are displayed by default and will not be rounded off.
@@ -156,7 +136,7 @@ Up to 8 decimal places are displayed by default and will not be rounded off.
 
 ```html
 <div>{{ 10000 | number(1, {separator: ','}) }}</div>
-<!-- 10,000.0 -->
+<!-- 10,000 -->
 ```
 
 <div>{{ 10000 | number(1, {separator: ','}) }}</div>

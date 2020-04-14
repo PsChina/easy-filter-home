@@ -2658,10 +2658,10 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
-easy-filter@^1.5.7:
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/easy-filter/-/easy-filter-1.5.7.tgz#6f9ede4ffe83d34c7e8b6f9091df58f1ba30dd84"
-  integrity sha512-CgyMqdxZ7A9JQnmgXyl8VIdIBpWaTg66Yv7uel5zDAVl62JwaMCQLhxb6OG9FJ9OJ9eF7a/IDyRwI0dwTk0uGw==
+easy-filter@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/easy-filter/-/easy-filter-1.6.0.tgz#14b97943673b0937a7c62ff5e2183a8b648e8c7d"
+  integrity sha512-N1aiCK9OQEKR8agBNYaYzP5X/QkX0bfvRtqPaueNWgvPhrR0UnkjvbJGkj7OWKbhhkdAdD02LmJmnQh23Ntnmw==
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
